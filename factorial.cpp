@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-#define uplimit 150;
+#define uplimit 150
 
 int product(int d, int fact[], int size)
 {
