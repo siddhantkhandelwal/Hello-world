@@ -1,0 +1,86 @@
+#include<iostream.h>
+#include<conio.h>
+#include<dos.h>
+#include<string.h>
+#include<process.h>
+int ans[10];
+void q()
+{
+clrscr();
+cout<<"\nQuestion";
+cout<<"\nOP1\tOP2\nOP3\tOP4";
+cout<<"Enter Option: ";
+cin>>ans[0];
+clrscr();
+cout<<"\nQuestion";
+cout<<"\nOP1\tOP2\nOP3\tOP4";
+cout<<"Enter Option: ";
+cin>>ans[1];
+clrscr();
+cout<<"\nQuestion";
+cout<<"\nOP1\tOP2\nOP3\tOP4";
+cout<<"Enter Option: ";
+cin>>ans[2];
+clrscr();
+cout<<"\nQuestion";
+cout<<"\nOP1\tOP2\nOP3\tOP4";
+cout<<"Enter Option: ";
+cin>>ans[3];
+clrscr();
+cout<<"\nQuestion";
+cout<<"\nOP1\tOP2\nOP3\tOP4";
+cout<<"Enter Option: ";
+cin>>ans[4];
+clrscr();
+cout<<"\nQuestion";
+cout<<"\nOP1\tOP2\nOP3\tOP4";
+cout<<"Enter Option: ";
+cin>>ans[5];
+clrscr();
+cout<<"\nQuestion";
+cout<<"\nOP1\tOP2\nOP3\tOP4";
+cout<<"Enter Option: ";
+cin>>ans[6];
+clrscr();
+cout<<"\nQuestion";
+cout<<"\nOP1\tOP2\nOP3\tOP4";
+cout<<"Enter Option: ";
+cin>>ans[7];
+clrscr();
+cout<<"\nQuestion";
+cout<<"\nOP1\tOP2\nOP3\tOP4";
+cout<<"Enter Option: ";
+cin>>ans[8];
+clrscr();
+cout<<"\nQuestion";
+cout<<"\nOP1\tOP2\nOP3\tOP4";
+cout<<"Enter Option: ";
+cin>>ans[9];
+}
+void main()
+{
+char name[30], pass[6];
+clrscr();
+cout<<"\n\n\t\t\t\tWelcome to Quiz";
+cout<<"\n\n\nEnter Name: ";
+cin>>name;
+cout<<"\n\nEnter Password to Begin: ";
+for(int i=0;i<5;i++)
+{
+pass[i]=(char)getch();
+cout<<'*';
+}
+pass[5]='\0';
+//cout<<pass;
+//delay(5000);
+if(strcmp(pass, "passw")==0)
+{cout<<"Correct Password Entered, Welcome "<<name;
+delay(3000);
+q();}
+else
+cout<<"Wrong Password Entered...... Exiting.....";
+delay(3000);
+exit(0);
+}
+
+
